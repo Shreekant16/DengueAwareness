@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block form %}
+<form method="post">
+    <div class="form-group">
+    <label>Username</label>
+    <input name="username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Username">
+  </div><br>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

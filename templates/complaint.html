@@ -1,0 +1,45 @@
+{% extends 'base1.html' %}
+{% block form %}
+<form class="needs-validation" novalidate method="post" action=mailto:shshshs>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Address</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Address" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">State</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">Sector</label>
+      <input type="text" class="form-control" id="validationCustom05" placeholder="Sector" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+      <label>Complaint</label><br>
+      <textarea cols="50" rows="2">
+      </textarea>
+      <br><br>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+{% endblock %}

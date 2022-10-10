@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}RegisterPage!{% endblock %}
+{% block form %}
+<form method="post" >
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div><br>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input name="username" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Username">
+  </div><br>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Phone no</label>
+    <input name="phone" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Phone no.">
+  </div><br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Address</label>
+    <input name="address" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Address">
+  </div><br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Sector</label>
+    <input name="sector" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Sector">
+  </div><br>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div><br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
